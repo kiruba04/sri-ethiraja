@@ -1,0 +1,33 @@
+.workcontainer {
+    background-color: #feab3a;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.workcard {
+    border: 3px solid #f1f1f1 !important;
+    box-shadow: 7px 7px 0 #f1f1f1 !important;
+    background-color: #212121 !important;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+
+
+
+.customcards .customcard {
+    transition: transform 400ms ease-in-out;
+}
+
+.customcards .customcard:hover { 
+    transform: scale(1.05, 1.05);
+}
+
+.customcards:hover > .customcard:not(:hover) {
+    filter: blur(5px);
+    transform: scale(0.9, 0.9);
+}
+
+.workpara{
+    color:#f1f1f1;
+}

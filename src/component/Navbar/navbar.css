@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Itim&family=Merienda:wght@300..900&family=Nunito:ital,wght@1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar
+{
+    --bs-navbar-toggler-border-color:#F7B538 !important;
+    --bs-navbar-toggler-icon-bg : url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27orange%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+}
+
+.nav{
+    background-color: #FBFBFB !important;
+    border-bottom-left-radius:2% ;
+    border-bottom-right-radius:2% ;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%) !important}
+.btn-grad {
+
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s !important;
+   background-size: 200% auto !important;
+   color: white !important;            
+   box-shadow: 0 0 20px #eee !important;
+   border-radius: 10px  !important;
+   display: block !important;
+ }
+
+ .btn-grad:hover {
+   background-position: right center !important; /* change the direction of the change here */
+   color: #fff !important;
+   text-decoration: none !important;
+ }
+
+ .nav-link{
+  font-family: "Merienda", serif;
+ }
+
+ .nav-link:hover{
+  color:#F7B538 !important;
+ }

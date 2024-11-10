@@ -1,0 +1,17 @@
+.imgbg{
+    background-image: url("https://hexaware.com/wp-content/uploads/2019/10/SAP-Services.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    animation: appear 1.5s linear forwards;
+    width:100%;
+    height: 89vh;
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+    }
+    
+}

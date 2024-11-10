@@ -1,0 +1,38 @@
+/* Adjust container text alignment */
+.container {
+  text-align: center;
+}
+
+/* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  max-height: 110px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensures the image scales proportionally */
+}
+
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Background and spacing */
+.clientcontainer {
+ 
+  padding-bottom: 10px;
+}
+
+/* Arrow button customization */
+.slick-prev:before, .slick-next:before {
+  font-size: 30px !important;
+  color: black;
+}

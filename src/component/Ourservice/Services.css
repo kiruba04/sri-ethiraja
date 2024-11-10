@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Itim&family=Nunito:ital,wght@1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Itim&family=Nunito:ital,wght@1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.cardshadow{
+    
+    border:3px solid black !important;
+    box-shadow: 12px 12px 0 #000 !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardshadow:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 17px 17px 0 #000;
+  }
+  
+.servicecontainer{
+  margin-bottom: 25px;
+}
+
+.servicetitle{
+    font-family: "Akaya Kanadaka", system-ui;
+    background: -webkit-linear-gradient(transparent, transparent), url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat;
+    background-size: 200px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: backgroundslide 10s infinite linear;
+}
+
+.card-body{
+  padding:0px !important;
+}
+
+@keyframes backgroundslide {
+    from {
+      background-position: 0 0%;
+    }
+    to {
+      background-position: 0 -200px;
+    }
+  }
+
+  .learnmore{
+    font-family: "Itim", sans-serif !important;
+    color:white !important;
+    font-size: 1.1rem !important;
+  }
+
+  .serviceshead{
+    font-size: 3rem;
+    text-align: start;
+    font-family: 'Baloo Paaji', cursive;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 10s infinite linear;
+  }
+
+  @keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+  .servicepara{
+    font-size: 1.2rem;
+    text-align: start;
+    color: #f35626;
+    font-family: "Aclonica", sans-serif;
+  }

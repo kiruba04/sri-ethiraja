@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Itim&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.sapcontent{
+    background-color: #f9eee3;
+    padding: 20px;
+    border-radius: 12px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+@media (min-width: 992px) {
+    .sapcontent{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    }
+}
+.saptitle{
+    font-family: "Akaya Kanadaka", system-ui;
+    background: -webkit-linear-gradient(transparent, transparent), url(https://visualstudiomagazine.com/-/media/ECG/VirtualizationReview/Images/introimages2014/GENRedGoldBendSwipes.jpg) repeat;
+    background-size: 200px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: bgslide 10s infinite linear;
+    font-size: 3.2rem;
+    font-weight: 300px;
+}
+    @keyframes bgslide {
+        from {
+          background-position: 0 -200px;
+        }
+        to {
+          background-position: 0 0%;
+        }
+      }
+.sappara{
+    font-size: 1.2rem;
+    text-indent: 35px;
+    text-align: left;
+    font-family: "Nunito", serif;
+}
+
+.erptitle{
+    text-align: left;
+    font-family: "Itim", serif;
+    background: -webkit-linear-gradient(transparent, transparent), url(https://wallpapercave.com/wp/wp4013627.jpg) repeat;
+    background-size: 200px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: bgslide 10s infinite linear;
+    font-size: 3.2rem;
+    font-weight: 300px;
+}
+
+.erppara{
+    font-size: 1.3rem;
+    text-align: left;
+    text-indent: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.img-erp{
+    height:42vh;
+}
+
+.saplist{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/010/742/695/non_2x/yellow-fluid-wave-duotone-geometric-compositions-with-gradient-3d-flow-shape-innovation-modern-background-design-for-cover-landing-page-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 12px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .img-erp{
+        width:100%;
+    }
+}
+
+ul {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Creates two columns */
+    gap: 10px 20px; /* Adds space between rows and columns */
+}
+
+ul li {
+    position: relative;
+    padding-left: 15px; /* Adds space for custom bullet */
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+}
+
+ul li::before {
+    content: ""; /* Custom circular bullet */
+    position: absolute;
+    left: 0;
+    top: 10px; /* Centers the bullet vertically */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #555; /* Default bullet color */
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover::before {
+    background-color: orange; /* Changes bullet color on hover */
+}
+
+ul li:hover{
+    color:orange;
+}
