@@ -78,7 +78,7 @@ const Carousel = () => {
               <div className="des"><p>{item.details}</p></div>
               <div className="btn">
                 <button>See More</button>
-                <button>Contact Us</button>
+                <button>Request Demo</button>
               </div>
             </div>
           </div>
