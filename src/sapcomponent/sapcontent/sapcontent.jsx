@@ -14,7 +14,7 @@ const Sapcontent =() =>{
         <div className="container mt-4">
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-6 col-12">
-                    <div className="saptitle erptitle">What is ERP</div>
+                    <div className="saptitle erptitle">What is ERP ?</div>
                 <p className="erppara">
         ERP stands for “enterprise resource planning.” ERP software includes programs for all core business areas, such as procurement, production, materials management, sales, marketing, finance, and human resources (HR).
         SAP was one of the first companies to develop standard software for business solutions and continues to offer industry-leading ERP solutions.
@@ -37,7 +37,7 @@ const Sapcontent =() =>{
                 <div className="col-lg-6 col-md-6 col-12">
                     <div className="saptitle erptitle">Sap Service</div>
                 <p className="erppara ">
-      <ul>
+      <ul className="erppara">
         <li>Cloud ERP </li><li>Business Network </li>
         <li>Business Technology Platform</li><li>CRM and Customer Experience </li>
         <li>Artificial Intelligence </li><li>Spend Management</li> 
@@ -45,13 +45,28 @@ const Sapcontent =() =>{
         <li>Financial Management </li><li>Small and Midsize Enterprises</li> 
         <li>Industry Solutions</li> 
         
-      </ul>
-                </p>
-                    </div>
-
-
+            </ul>
+              </p>
+             </div>
             </div>
         </div>
+
+
+        {/* AMS conten */}
+        <div className="container mt-4 sapcontent amscontent">
+            <div className="saptitle">AMS services </div>
+        <div className="sappara amspara">
+        <p>Application Management Services (AMS) provide support for a customer’s SAP landscape after implementation, following the Service Level Agreement (SLA) and often continuing through the Hypercare Phase. AMS uses tools like the Change Management Process, which guides the authorization, planning, and implementation of changes in production.</p>
+
+        <p>Customer-initiated changes that aren't due to malfunctions or predefined as standard are handled through Change Requests, which formally document desired business changes. Pre-approved, low-impact updates are managed as Standard Changes through Request Fulfillment.</p>
+
+        <p>Change management covers the entire process from request to implementation, with changes classified by production impact (regular or emergency) and requiring varying levels of approval.</p>
+
+        <p>AMS also processes requirements—requests or tasks categorized as incidents, change requests, or service requests. These requests are submitted through a ticketing system or the Service Desk, a central entry point for efficient handling.</p>
+        </div>
+        </div>
+
+        
         </>
     )
 }

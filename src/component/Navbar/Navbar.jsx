@@ -27,17 +27,16 @@ function MyNavbar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <NavDropdown title="Product" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/sapproduct">SAP</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/action2">Proman</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/act">Proman</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/action3">Sri Agam Mithran</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/action3">Temple Management System</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Servies" id="collasible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/sap">SAP Service</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/action2">Web Service</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/web-service">Web Service</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/action3">App Devlopment</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/app-dev">App Devlopment</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav> 

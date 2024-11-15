@@ -1,0 +1,16 @@
+.reporttitle{
+    font-size:1.5rem;
+    text-align: left;
+    margin-bottom: 8px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.reportpara{
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    text-indent: 30px;
+}
+.reportbg{
+    background-color: #fff3ed;
+}

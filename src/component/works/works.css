@@ -1,13 +1,13 @@
 .workcontainer {
-    background-color: #feab3a;
+    background-color: #f1f1f1 ;
     border-radius: 8px;
     padding: 25px;
 }
 
 .workcard {
-    border: 3px solid #f1f1f1 !important;
-    box-shadow: 7px 7px 0 #f1f1f1 !important;
-    background-color: #212121 !important;
+    border: 3px solid #000!important;
+    box-shadow: 7px 7px 0 #000!important;
+    background-color: #feab3a!important;
     border-radius: 15px;
     margin-bottom: 10px;
     transition: transform 400ms ease-in-out, box-shadow 400ms ease-in-out;

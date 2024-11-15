@@ -1,0 +1,40 @@
+
+
+.amstitle{
+    color:orange;
+}
+
+@media (max-width: 576px) {
+    .flowcard{
+        margin-bottom: 20px;
+    }
+}
+
+.flowcard{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.arrow img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .right-arrow {
+    display: inline-block; /* Right arrow visible by default */
+  }
+  
+  .down-arrow {
+    display: none; /* Hide down arrow on larger screens */
+  }
+  
+  /* Media query to handle mobile view */
+  @media (max-width: 767px) {
+    .right-arrow {
+      display: none; /* Hide right arrow on mobile */
+    }
+    
+    .down-arrow {
+      display: inline-block; /* Show down arrow on mobile */
+    }
+  }
+  
