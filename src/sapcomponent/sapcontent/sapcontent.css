@@ -61,17 +61,14 @@
     height:42vh;
 }
 
-.saplist{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/010/742/695/non_2x/yellow-fluid-wave-duotone-geometric-compositions-with-gradient-3d-flow-shape-innovation-modern-background-design-for-cover-landing-page-free-vector.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius: 12px;
-    width: 100%;
-}
+
 
 @media (max-width: 768px){
     .img-erp{
         width:100%;
+    }
+    ul li{
+        font-size: 1rem !important;
     }
 }
 
