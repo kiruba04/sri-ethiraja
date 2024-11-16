@@ -1,5 +1,5 @@
 import "./sapcontent.css";
-import erp from '../../assests/ventajas erp.png'
+
 import Erpsvg from "../../assests/erpsvg.png"
 const Sapcontent =() =>{
     return (
@@ -11,6 +11,7 @@ const Sapcontent =() =>{
         </p>
         </div>
 
+<div className="erpbg">
         <div className="container mt-4">
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-6 col-12">
@@ -21,11 +22,11 @@ const Sapcontent =() =>{
                 </p>
                     </div>
                 <div className="col-lg-6 col-md-6 col-12">
-                    <img src={erp} alt="erp" className="img-erp" />
+                    <img src='https://www.sam-solutions.com/blog/wp-content/uploads/2019/11/SAP-Commerce-Cloud-capabilities-smm.png' alt="erp" className="img-erp" />
                 </div>
             </div>
         </div>
-
+</div>
 
         <div className="container saplist mt-4">
             <div className="row align-items-center">

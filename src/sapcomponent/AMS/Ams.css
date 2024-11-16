@@ -1,7 +1,10 @@
 
 
 .amstitle{
-    color:orange;
+  background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: "Jost", sans-serif;
 }
 
 @media (max-width: 576px) {

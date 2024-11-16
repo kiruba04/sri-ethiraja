@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Itim&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .sapcontent{
     background-color: #f9eee3;
     padding: 20px;
@@ -14,8 +16,8 @@
     }
 }
 .saptitle{
-    font-family: "Akaya Kanadaka", system-ui;
-    background: -webkit-linear-gradient(transparent, transparent), url(https://visualstudiomagazine.com/-/media/ECG/VirtualizationReview/Images/introimages2014/GENRedGoldBendSwipes.jpg) repeat;
+    font-family: "Jost", sans-serif;
+    background: -webkit-linear-gradient(transparent, transparent), url(https://st2.depositphotos.com/1747568/11982/v/950/depositphotos_119826156-stock-illustration-abstract-background-consisting-of-yellow.jpg) repeat;
     background-size: 200px auto;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -35,12 +37,18 @@
     font-size: 1.2rem;
     text-indent: 35px;
     text-align: left;
-    font-family: "Nunito", serif;
+    font-family: "Roboto", sans-serif;
 }
-
+.erpb{
+    background-image: url('https://image-analyzer.com/hubfs/Imported_Blog_Media/Screenshot-2019-10-16-at-10_18_21-3.jpg');
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 .erptitle{
     text-align: left;
-    font-family: "Itim", serif;
+    font-family: "Jost", sans-serif;
     background: -webkit-linear-gradient(transparent, transparent), url(https://wallpapercave.com/wp/wp4013627.jpg) repeat;
     background-size: 200px auto;
     -webkit-text-fill-color: transparent;
@@ -54,11 +62,12 @@
     font-size: 1.3rem;
     text-align: left;
     text-indent: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .img-erp{
     height:42vh;
+    width:70%;
 }
 
 
@@ -85,7 +94,7 @@ ul li {
     position: relative;
     padding-left: 15px; /* Adds space for custom bullet */
     font-size: 1.2rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #333;
 }
 

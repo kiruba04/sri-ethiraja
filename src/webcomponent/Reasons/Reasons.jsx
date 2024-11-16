@@ -4,12 +4,12 @@ import './Reasons.css'
 
 const cardContent = [
   {
-    title: "Showcases Credibility and Professionalism",
-    description: `A meticulously designed and well-curated website doesn’t just represent your brand — it elevates it. Greeting online visitors with intuitive user experiences, polished designs, and responsive performance signals that every facet of your business matters.`,
+    title: "Elevate Your Brand with a Website",
+    description: `A well-crafted website doesn’t just showcase your brand — it elevates it. Intuitive design, responsive performance, and polished visuals convey professionalism, building trust and engagement. In today’s digital age, your website is a reflection of your commitment to quality, inspiring confidence and driving customer loyalty.`,
   },
   {
     title: "Increases Brand Awareness",
-    description: `Your website directly reflects your brand, showing visitors who you are and what your business represents. Every web design detail, from typography to content style, contributes to your brand’s identity and personality.`,
+    description: `Your website is your brand's mirror, showcasing its identity and values. Every design element, from fonts to content, shapes your unique personality, setting you apart from competitors. A strong, memorable online presence breaks barriers, extending your reach far beyond local limits.`,
   },
   {
     title: "Provides 24/7 Accessibility and Convenience",
@@ -17,15 +17,15 @@ const cardContent = [
   },
   {
     title: "Enhances Customer Engagement",
-    description: `Interactive website features actively engage visitors, converting passive browsers into leads and loyal customers. Sharing expertise through blog posts and collecting user input through feedback forms boost engagement.`,
+    description: `Interactive website features transform visitors from passive viewers into engaged participants and loyal customers. Blogs, portfolios, and feedback forms boost engagement by showcasing expertise and collecting user input. Encouraging actions like purchases, feedback, or forum participation fosters connection, turning customers into repeat buyers and enthusiastic brand advocates, driving growth and loyalty.`,
   },
   {
     title: "Enables Data Collection and Analysis",
-    description: `Every visitor interaction provides website statistics that help you better understand audience preferences and refine your strategies.`,
+    description: `Every interaction on your website reveals insights into your audience's preferences and behavior. Tools like Google Analytics help track traffic, popular content, and navigation paths, enabling data-driven decisions to refine strategies. This responsiveness enhances engagement and retention, ensuring your business stays aligned with customer needs.`,
   },
   {
     title: "Amplifies Search Visibility Through SEO",
-    description: `Following website SEO best practices enhances your brand’s discoverability. Crafting quality content and optimizing for search engines increases organic traffic.`,
+    description: `Following SEO best practices boosts your brand’s visibility. By creating valuable content, using relevant keywords, and optimizing for mobile, you improve search engine rankings. An optimized site signals relevance and authority, increasing organic traffic and enhancing credibility. With most users staying on the first search results page, SEO ensures your business stays front and center for potential customers.`,
   },
   {
     title: "Harnesses Digital Marketing Avenues",
@@ -41,7 +41,7 @@ const cardContent = [
   },
   {
     title: "Centralizes Control Over Content",
-    description: `Unlike social media, a website offers total command over your content, letting you present your brand's story genuinely.`,
+    description: `Owning a website gives you full control over your content, unlike social media with its character limits and algorithm changes. You shape everything — from content depth and imagery to navigation paths. This control lets you guide visitors seamlessly to key actions, presenting your brand’s story authentically and effectively, ensuring your website fulfills its purpose of engaging and converting leads.`,
   },
 ];
 
@@ -56,7 +56,7 @@ const Reasons = () => {
             <Col md={6} lg={4} key={index} className="mb-2">
               <div className="reason-card">
                 <div className="content">
-                  <p className="logo">Digital Way</p>
+                  <p className="logo">{(index + 1).toString().padStart(2, '0')}</p>
                   <div className="h6">{item.title}</div>
                   <div className="hover_content">
                     <p>{item.description}</p>

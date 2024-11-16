@@ -14,7 +14,7 @@
   }
   
   .heading {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'SuisseInt1';
     font-size: 3.2rem;
     font-weight:  100;
     letter-spacing: 2px;
@@ -24,7 +24,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: hue 10s infinite linear;
-      font-style: italic;
+   
       margin-bottom: 20px !important;
       border-bottom: 2px solid orange;
       width:30%;
