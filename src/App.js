@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/HomePage/HomePage';
 import Sappage from './pages/SAP/Sappage';
 import Web from './pages/Webservice/Web';
+import Apppage from './pages/Apppage/Appdev'
 function App() {
   return (
     <Router>  
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sap" element={<Sappage/>}/>
         <Route path="/web-service" element ={<Web/>}/>
+        <Route path="/app-dev" element={<Apppage/>}/>
       </Routes>
     
   </Router>

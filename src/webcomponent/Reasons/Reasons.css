@@ -11,6 +11,7 @@
   box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
   transition: all 0.35s ease;
   margin: 8px;
+  
 }
 
 .reason-card::before, .reason-card::after {
@@ -97,7 +98,7 @@
 }
 
 .reason-card:hover .hover_content {
-  max-height: 10em;
+  max-height: 16em;
   transform: none;
 }
 

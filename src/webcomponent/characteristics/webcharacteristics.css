@@ -2,7 +2,7 @@
 
 .charhead{
     font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -15,7 +15,7 @@
     padding: 20px;
   }
   
-  .feature-card {
+ .feature-card {
     background-color: #f8f8fc;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -25,7 +25,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.feature-card:hover .feature-title {
+    color: #f8b500;
+}
+
+.feature-card:hover .feature-description {
+    color: #333;
+}
   
   .feature-icon {
     width:80px;
@@ -38,6 +53,7 @@
     font-weight: bold;
     color: #333;
     font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
   }
   
   .feature-description {

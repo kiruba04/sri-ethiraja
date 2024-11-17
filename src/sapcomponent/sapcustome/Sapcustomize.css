@@ -1,0 +1,42 @@
+.sideborder {
+    position: relative;
+}
+
+.sideborder::before,
+.sideborder::after {
+    position: absolute;
+    content: '';
+    top: 10%;
+    height: 80%; 
+    background: linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+    border-radius: 12px;
+}
+
+.sideborder::before {
+    width: 2px;
+    left: 0; /* Aligns the left border */
+}
+
+.sideborder::after {
+    width: 3px;
+    right: 0; /* Aligns the right border */
+}
+
+@media (max-width: 500px) {
+    .sideborder::before,
+    .sideborder::after {
+        
+        height: 2px;
+        width: 80%;
+    }
+
+    .sideborder::before {
+        top: 0;
+        left: 10%; /* Adjusts to be horizontal for smaller screens */
+    }
+
+    .sideborder::after {
+        top:100%;
+        right: 10%; /* Adjusts to be horizontal for smaller screens */
+    }
+}

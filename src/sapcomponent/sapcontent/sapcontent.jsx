@@ -22,7 +22,7 @@ const Sapcontent =() =>{
                 </p>
                     </div>
                 <div className="col-lg-6 col-md-6 col-12">
-                    <img src='https://www.sam-solutions.com/blog/wp-content/uploads/2019/11/SAP-Commerce-Cloud-capabilities-smm.png' alt="erp" className="img-erp" />
+                    <img src='https://hexaware.com/wp-content/uploads/2019/10/SAP-Services.jpg' alt="erp" className="img-erp img-shadow" />
                 </div>
             </div>
         </div>

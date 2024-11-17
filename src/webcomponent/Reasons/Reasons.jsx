@@ -49,7 +49,7 @@ const Reasons = () => {
     return (
       <Container className='mt-4'>
         <div className='mb-4'>
-          <h2>Reasons why your business needs a website</h2>
+          <div className='charhead'>Reasons why your business needs a website</div>
         </div>
         <Row>
           {cardContent.map((item, index) => (

@@ -29,7 +29,7 @@ const Report =()=>{
 
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-12 mt-3">
+                <div className="col-lg-4 col-md-4 col-12 mt-3 sideborder">
                     <div className="reporttitle">Embedded Reporting for Real-Time, Synchronized Insights</div>
                     <p className="reportpara">
                     With the embedded approach for reporting in SAP S/4HANA across different applications, business users get synchronized insights quickly within the solution, helping them make better decisions regarding all the information at hand. It enables them to make informed decisions based on real-time insights.

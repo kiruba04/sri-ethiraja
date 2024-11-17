@@ -1,5 +1,4 @@
 
-import Saphome from "../../sapcomponent/saphome/Saphome";
 import Sapcontent from "../../sapcomponent/sapcontent/sapcontent";
 import MyNavbar from "../../component/Navbar/Navbar";
 import Ams from "../../sapcomponent/AMS/WorkProcess";
@@ -9,7 +8,7 @@ const Sappage =() =>{
     return(
         <>
         <MyNavbar/>
-        <Saphome/>
+
         <Sapcontent/>
         <Ams/>
         <Report/>

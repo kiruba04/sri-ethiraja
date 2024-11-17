@@ -1,4 +1,4 @@
-
+import './Sapcustomize.css'
 
 const Sapcustomize = () =>{
     return (
@@ -28,7 +28,7 @@ const Sapcustomize = () =>{
 
                 </div>
 
-                <div className="col-lg-4 col-md-4 col-12 mt-3">
+                <div className="col-lg-4 col-md-4 col-12 mt-3 sideborder">
                     <div className="reporttitle">Process Optimization:</div>
                     <p className="reportpara">
                     SAP software customization enables businesses to optimize their processes by tailoring the system to their specific needs. By streamlining workflows and eliminating unnecessary steps, organizations can improve efficiency, reduce errors, and enhance the accuracy of data captured within the system. This optimization leads to time and cost savings, as well as improved decision-making capabilities.

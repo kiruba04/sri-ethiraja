@@ -1,5 +1,4 @@
 
-import Webhome from"../../webcomponent/home/webhome"
 import MyNavbar from "../../component/Navbar/Navbar";
 import Webcontent from "../../webcomponent/webconent/webcontent";
 import Webcharacteristics from "../../webcomponent/characteristics/webcharacteristics";
@@ -10,7 +9,7 @@ const Web =() =>{
     return (    
         <>
         <MyNavbar/>
-        <Webhome/>
+
         <Webcontent/>
         <Webcharacteristics/>
         <Needs/>

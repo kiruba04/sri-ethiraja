@@ -17,7 +17,7 @@ const webcontent = () =>{
                 
                     </div>
                 <div className="col-lg-6 col-md-6 col-12">
-                    <img src="https://www.webinatic.com/wp-content/uploads/2022/12/about-us-image-webinatic.png" alt="erp" className="img-erp" />
+                    <img src="https://www.belcan.com/wp-content/uploads/2022/08/Evolution-of-Engineering-Drawings-600x300.jpg" alt="erp" className="img-erp img-shadow" />
                 </div>
             </div>
         </div>

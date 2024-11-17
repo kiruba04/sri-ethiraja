@@ -7,6 +7,7 @@
     border-radius: 12px;
     padding-left: 20px !important;
     padding-right: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 @media (min-width: 992px) {
@@ -15,6 +16,7 @@
     padding-right: 50px !important;
     }
 }
+
 .saptitle{
     font-family: "Jost", sans-serif;
     background: -webkit-linear-gradient(transparent, transparent), url(https://st2.depositphotos.com/1747568/11982/v/950/depositphotos_119826156-stock-illustration-abstract-background-consisting-of-yellow.jpg) repeat;
@@ -68,6 +70,11 @@
 .img-erp{
     height:42vh;
     width:70%;
+    
+}
+.img-shadow{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 12px;
 }
 
 
@@ -96,19 +103,38 @@ ul li {
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     color: #333;
+    transition: color 0.3s ease;
 }
 
 ul li::before {
     content: ""; /* Custom circular bullet */
     position: absolute;
     left: 0;
-    top: 10px; /* Centers the bullet vertically */
+    top: 15px; /* Centers the bullet vertically */
     width: 8px;
     height: 8px;
     border-radius: 50%; /* Makes it circular */
     background-color: #555; /* Default bullet color */
     transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite;
 }
+
+/*animation for ul */
+
+@keyframes pulse {
+    0% {
+      transform: scale(1) translateY(-50%);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5) translateY(-50%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1) translateY(-50%);
+      opacity: 1;
+    }
+  }
 
 ul li:hover::before {
     background-color: orange; /* Changes bullet color on hover */
