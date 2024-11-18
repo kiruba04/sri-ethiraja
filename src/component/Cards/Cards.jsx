@@ -1,35 +1,100 @@
-import React, { useRef } from 'react';
-import './Cards.css';
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import "./Cards.css";
 import vision from "../../assests/visionpng.png";
 import mission from "../../assests/missionpng.png";
 
 function Cards() {
-    const headingRef = useRef(null);
+  const [activeCard, setActiveCard] = useState("vision");
+  const [animationClass, setAnimationClass] = useState("");
+  const headingRef = useRef(null);
 
+  // Memoize the switchCard function to avoid recreation
+  const switchCard = useCallback(
+    (card) => {
+      if (activeCard !== card) {
+        console.log("Fading out to the left...");
+        setAnimationClass("fade-out-left");
+        setTimeout(() => {
+          setActiveCard(card);
+          console.log("Fading in from the right...");
+          setAnimationClass("fade-in-right");
+        }, 500);
+      }
+    },
+    [activeCard]
+  );
+  
+  
+
+  // Automatic switching every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextCard = activeCard === "vision" ? "mission" : "vision";
+      switchCard(nextCard);
+    }, 10000); // Switch every 10 seconds
+    return () => clearInterval(interval);
+  }, [activeCard, switchCard]); // Add switchCard to dependencies
+
+  return (
+    <div className="container mt-3 cardcontainer">
+      <h2 ref={headingRef} className="heading">What we are?</h2>
  
+      <div className="row">
+        {/* Vision and Mission Cards */}
+        <div className="col-lg-6 col-md-6 col-sm-12">
+        <div className="buttons">
+        <button className="custom-btn-card" onClick={() => switchCard("vision")}>
+          Vision
+        </button>
+        <button className="custom-btn-card" onClick={() => switchCard("mission")}>
+          Mission
+        </button>
+      </div>
+        <div
+          className={` mb-4 card-wrapper ${animationClass}`}
+          onAnimationEnd={() => setAnimationClass("")} // Reset animation class
+        >
 
-    return (
-        <div className="container mt-3 cardcontainer">
-            <h2 ref={headingRef} className="heading">What we are</h2>
-            <div className="row">
-                {/* Vision Card */}
-                <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div className="card1">
-                        <div className="cardhead"> OUR VISION </div>
-                        <img className="cardimg" src={vision} alt="vission.png"/>
-                    </div>
+          {activeCard === "vision" && (
+             <div className="card1">
+             <div>
+                  <p className="card1-title">VISION</p>
+                  <p className="small-desc">
+                  To help accelerate business growth for our clients by enabling digital transformation at scale!
+                  </p>
+                  </div>
+                  <div>
+                  <img src={vision} alt="hi" className="cardimg"/>
+                  </div>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
                 </div>
-
-                {/* Mission Card */}
-                <div className="col-lg-4 col-md-6 col-sm-12 mb-4 topslight">
-                    <div className="card2">
-                        <div className="cardhead"> OUR MISSION</div>
-                        <img className="cardimg" src={mission} alt="goal.png"/>
-                    </div>
-                </div>
-            </div>
+          )}
+          {activeCard === "mission" && (
+            <div className="card1">
+            <div>
+                 <p className="card1-title">MISSION</p>
+                 <p className="small-desc">
+                 Be a true strategic partner in our client’s IT-enabled growth roadmap by leveraging our expertise across industry domains.
+                 </p>
+                 </div>
+                 <div>
+                 <img src={mission} alt="Mission Illustration" className="cardimg"/>
+                 </div>
+                 <div className="go-corner">
+                   <div className="go-arrow">→</div>
+                 </div>
+               </div>
+          )}
         </div>
-    );
+        </div>
+        <div className="col-lg-6">
+            <img src="https://walulel.com/images/walulel-about-us.png" alt ="work" className="img-erp"/>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Cards;

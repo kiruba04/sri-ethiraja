@@ -38,7 +38,7 @@ const Appcycle = () => {
     return (
       <Container className='mt-4'>
         <div className='mb-4'>
-          <div className='charhead'>Reasons why your business needs a website</div>
+          <div className='charhead'>App life cycle</div>
         </div>
         <Row>
           {cardContent.map((item, index) => (
