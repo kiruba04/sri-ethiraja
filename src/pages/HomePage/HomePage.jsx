@@ -4,6 +4,8 @@ import Cards from "../../component/Cards/Cards"
 import Client from "../../component/Clientcard/Client";
 import Services from "../../component/Ourservice/Services";
 import Works from "../../component/works/works";
+import Footer from "../../component/Footer/Footer"
+
 const HomePage = () =>
 {
     return (
@@ -14,6 +16,7 @@ const HomePage = () =>
         <Client/>
         <Services/>
         <Works/>
+        <Footer/>
         </>
     );
 }

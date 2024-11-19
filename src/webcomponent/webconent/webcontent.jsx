@@ -10,7 +10,7 @@ const webcontent = () =>{
                 <p className="erppara"> 
                 Web service is a standardized medium to propagate communication between the client and server applications on the WWW (World Wide Web). A web service is a software module that is designed to perform a certain set of tasks.
                 </p>
-                <ul className="websub">
+                <ul className="websub erpul">
 	<li className="webpoints">Web services in cloud computing can be searched for over the network and can also be invoked accordingly.</li>
     <li className="webpoints">When invoked, the web service would be able to provide the functionality to the client, which invokes that web service.</li>
                 </ul>

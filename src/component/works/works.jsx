@@ -6,7 +6,7 @@ const Workscard = ({ title, id }) => {
   return (
     <Card className="text-left p-3 workcard">
       <Card.Body className="d-flex justify-content-space-around align-items-center">
-        <Card.Title className="mb-3 servicetitle" style={{ fontWeight: "bold", fontSize: "2rem" }}>
+        <Card.Title className="mb-3 servicetitle titlefont" style={{ fontWeight: "bold", fontSize: "2rem" }}>
           {String(id).padStart(2, '0')} {title}
         </Card.Title>
       </Card.Body>

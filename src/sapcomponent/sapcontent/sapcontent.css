@@ -93,7 +93,7 @@
     }
 }
 
-ul {
+.erpul {
     list-style: none; /* Removes default bullets */
     padding: 0;
     margin: 0;
@@ -102,7 +102,7 @@ ul {
     gap: 10px 20px; /* Adds space between rows and columns */
 }
 
-ul li {
+.erpul li {
     position: relative;
     padding-left: 15px; /* Adds space for custom bullet */
     font-size: 1.2rem;
@@ -111,7 +111,7 @@ ul li {
     transition: color 0.3s ease;
 }
 
-ul li::before {
+.erpul li::before {
     content: ""; /* Custom circular bullet */
     position: absolute;
     left: 0;
@@ -141,10 +141,10 @@ ul li::before {
     }
   }
 
-ul li:hover::before {
+.erpul li:hover::before {
     background-color: orange; /* Changes bullet color on hover */
 }
 
-ul li:hover{
+.erpul li:hover{
     color:orange;
 }

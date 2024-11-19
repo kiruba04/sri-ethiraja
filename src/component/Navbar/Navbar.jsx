@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 
-import logo from '../../assests/seticon.png'
+import logo from '../../assests/set-logo.png'
 
 import './navbar.css'
 
