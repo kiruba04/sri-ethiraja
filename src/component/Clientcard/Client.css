@@ -10,8 +10,9 @@
 
 .slick-slide img {
   width: 100%;
-  max-height: 110px; /* Adjust the height as needed */
+  max-height: 150px; /* Adjust the height as needed */
   object-fit: contain; /* Ensures the image scales proportionally */
+
 }
 
 .slick-list {

@@ -12,11 +12,11 @@ function Cards() {
   const switchCard = useCallback(
     (card) => {
       if (activeCard !== card) {
-        console.log("Fading out to the left...");
+        
         setAnimationClass("fade-out-left");
         setTimeout(() => {
           setActiveCard(card);
-          console.log("Fading in from the right...");
+          
           setAnimationClass("fade-in-right");
         }, 500);
       }
@@ -37,7 +37,7 @@ function Cards() {
 
   return (
     <div className="container mt-3 cardcontainer">
-      <h2 ref={headingRef} className="heading">What we are?</h2>
+      <div ref={headingRef} className="heading">What we are?</div>
  
       <div className="row">
         {/* Vision and Mission Cards */}

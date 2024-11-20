@@ -34,9 +34,9 @@
   }
   
   .heading {
-    font-family: 'SuisseInt1';
-    font-size: 3.2rem;
-    font-weight:  100;
+    font-family: "Jost", sans-serif;
+    font-size: 2.8rem;
+ 
     letter-spacing: 2px;
     text-align: center;
     color: #f35626;
@@ -167,6 +167,7 @@
 .heading{
   width:90%;
   font-size: 2rem;
+  font-family: "Jost", sans-serif !important;
 }
 .small-desc {
   font-size: 0.8rem;
