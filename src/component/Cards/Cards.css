@@ -174,11 +174,6 @@
 }
 }
 
-.custom-card-btn1{
-  border-radius: 0px !important;
-  border-bottom: 2px solid black !important;
-  border-right:  1px solid black !important;
-}
 
 .custom-btn-card {
   --color: #ff9a3c;
@@ -187,7 +182,7 @@
   width: 8em;
   height: 2.6em;
   line-height: 2.5em;
-  margin-right: 5px;
+  margin-right: 20px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -213,6 +208,21 @@
 
 .custom-btn-card:hover {
   color: #fff;
+  
+}
+
+.custom-btn-card-active{
+  animation: activeeffect 0.3s forwards;
+}
+
+@keyframes activeeffect{
+  0% {
+    transform: translateY(0px);
+  }
+  100%{
+    transform:translateY(-5px);
+  }
+  
 }
 
 .custom-btn-card:before {

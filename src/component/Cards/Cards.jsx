@@ -43,10 +43,10 @@ function Cards() {
         {/* Vision and Mission Cards */}
         <div className="col-lg-6 col-md-6 col-sm-12">
         <div className="buttons">
-        <button className="custom-btn-card" onClick={() => switchCard("vision")}>
+        <button className={`custom-btn-card ${activeCard === 'vision' ?"custom-btn-card-active":"" }`}onClick={() => switchCard("vision")}>
           Vision
         </button>
-        <button className="custom-btn-card" onClick={() => switchCard("mission")}>
+        <button className={`custom-btn-card ${activeCard === 'mission' ?"custom-btn-card-active":"" }` } onClick={() => switchCard("mission")}>
           Mission
         </button>
       </div>
