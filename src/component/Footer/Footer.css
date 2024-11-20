@@ -1,10 +1,11 @@
 
 .footer-section {
-  background: #151414;
+  background: #f9f9f9;
   position: relative;
+  border-radius: 12px;
 }
 .footer-cta {
-  border-bottom: 1px solid #373636;
+  border-bottom: 1px solid #ff5e14;
 }
 .single-cta i {
   color: #ff5e14;
@@ -17,13 +18,13 @@
   display: inline-block;
 }
 .cta-text h4 {
-  color: #fff;
+  color: #ff5e14;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: black;
   font-size: 15px;
 }
 .footer-content {
@@ -47,7 +48,7 @@
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+      color: black;
   line-height: 28px;
 }
 .footer-social-icon span {
@@ -105,7 +106,7 @@
   color: #ff5e14;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: black;
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -139,7 +140,7 @@
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: white;
 }
 .copyright-text p a{
   color: #ff5e14;
