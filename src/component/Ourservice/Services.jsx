@@ -42,7 +42,7 @@ const MarketingDashboard = () => {
         <div className="col-md-4">
           <MarketingCard
             title="Web Service"
-            bgColor="#212121"
+            bgColor="#fffff"
             image={Web}
             linkText="Learn more"
             textcolor="white"

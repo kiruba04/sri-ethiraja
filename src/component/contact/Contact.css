@@ -46,10 +46,27 @@ svg {
 
 .container-contact {
 	height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-row{
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width:700px) {
+  .custom-row{
+    flex-wrap: wrap !important;
+  }
+  .container-contact{
+    align-items: unset;
+  }
 }
 
 form {
-	min-width: 25rem;
+	max-width: 25rem;
 	
 	.title {
 		font-family: 'Pacifico', cursive;

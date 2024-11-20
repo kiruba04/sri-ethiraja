@@ -4,9 +4,9 @@ const Contact = () =>
 {
     return(
         <>
-        <div className="container-contact d-flex justify-content-center align-items-center">
-
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none " className='svg-place'>
+        <div className="container-contact">
+<div className='row custom-row' >
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none " className='svg-place col-sm-12 col-lg-6'>
 			<g id="Image">
 					<g id="g14">
 							<g id="g16">
@@ -305,7 +305,7 @@ const Contact = () =>
 	
 
 	
-	<form>
+	<form className='col-sm-12 col-lg-6'>
 		<h1 className="title text-center mb-4">Talk to Us</h1>
 
 			
@@ -335,6 +335,7 @@ const Contact = () =>
 			</div>
 	</form>
 	
+</div>
 </div>
         </>
     )
