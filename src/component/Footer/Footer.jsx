@@ -58,21 +58,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                  Crafting seamless digital experiences for web and app solutions.
                   </p>
                 </div>
                 <div className="footer-social-icon">
                   <span>Follow us</span>
-                  
-                    <i className="fab fa-facebook-f facebook-bg"></i>
-                 
-                  
-                    <i className="fab fa-twitter twitter-bg"></i>
-                 
-                    <i className="fab fa-google-plus-g google-bg"></i>
-                  
                 </div>
               </div>
             </div>
@@ -104,12 +94,12 @@ const Footer = () => {
         <Link to="/app-dev">App Service</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact-us">Contact</Link>
       </li>
      
      
       <li>
-        <Link to="/temple-erp">Temple ERP</Link>
+        <Link to="/templeerp">Temple ERP</Link>
       </li>
     </ul>
               </div>

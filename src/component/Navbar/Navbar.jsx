@@ -27,20 +27,20 @@ function MyNavbar() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             <NavDropdown title="Product" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/act">Proman</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/action3">Sri Agam Mithran</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/action3">Temple Management System</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/proman">Proman</NavDropdown.Item>
+              
+              <NavDropdown.Item as={Link} to="/sri-agam-mithran">Sri Agam Mithran</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/templeerp">Temple Management System</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Servies" id="collasible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/sap">SAP Service</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/web-service">Web Service</NavDropdown.Item>
-              <NavDropdown.Divider />
+              
               <NavDropdown.Item as={Link} to="/app-dev">App Devlopment</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav> 
-          <Nav.Link as={Link} to="/contact" className="btn btn-grad">
+          <Nav.Link as={Link} to="/contact-us" className="btn btn-grad">
             Contact Us <FontAwesomeIcon icon={faHeadset} /> 
             </Nav.Link>
           </Nav>

@@ -40,7 +40,7 @@ const PartnerCarousel = () => {
           <div className="slide"><img src="https://th.bing.com/th/id/OIP.GB0A0v7sXHUM15bFa6DRpAAAAA?rs=1&pid=ImgDetMain" alt="Logo 2" /></div>
           <div className="slide"><img src="https://res.cloudinary.com/dsgdnskfj/image/upload/v1730736095/tagline_zublxb.png" alt="Logo 3" /></div>
           <div className="slide"><img src="https://res.cloudinary.com/dsgdnskfj/image/upload/v1730736307/2_wf4hf0.png" alt="Logo 4" /></div>
-          <div className="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="Logo 5" /></div>
+          <div className="slide"><img src="https://res.cloudinary.com/dsgdnskfj/image/upload/v1732031101/Sunlit_fblprh.png" alt="Logo 5" /></div>
           <div className="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="Logo 6" /></div>
           <div className="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" alt="Logo 7" /></div>
         </Slider>
