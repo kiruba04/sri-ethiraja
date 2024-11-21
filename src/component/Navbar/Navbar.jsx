@@ -8,6 +8,8 @@ import logo from '../../assests/set-logo.png'
 
 import './navbar.css'
 
+
+
 function MyNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" className='nav' sticky="top">
@@ -25,7 +27,20 @@ function MyNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link
+         href="#about"
+           onClick={(e) => {
+             e.preventDefault();
+             const target = document.getElementById("about");
+           if (target) {
+            const yOffset = -80; // Offset by 20px above the element
+           const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: yPosition, behavior: "smooth" });
+       }
+      }}
+      >
+        About
+        </Nav.Link>
             <NavDropdown title="Product" id="collasible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/proman">Proman</NavDropdown.Item>
               

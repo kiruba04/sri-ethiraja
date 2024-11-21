@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
+import { useNavigate } from 'react-router-dom'; 
 
 const Carousel = () => {
   const nextBtnRef = useRef(null);
@@ -9,6 +10,7 @@ const Carousel = () => {
   const carouselRef = useRef(null);
   const runningTimeRef = useRef(null);
   const runNextAutoRef = useRef(null); // Changed runNextAuto to useRef
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const timeRunning = 3000;
   const timeAutoNext = 7000;
@@ -64,22 +66,22 @@ const Carousel = () => {
   return (
     <div className="carousel" ref={carouselRef}>
       <div className="list" ref={listRef}>
-        {[{ name: 'Temple Management System', image: 'https://i1.wp.com/vak1969.com/wp-content/uploads/2017/01/sri-ekambaranathar-temple-kanchipuram-tamil-nadu.jpg?ssl=1',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." }, 
-          { name: 'SAP', image: 'https://runibex.com/wp-content/uploads/2020/10/runibex-technology_1474696694-scaled.jpg',details:"As a global leader in enterprise applications and business AI, SAP  stands at the nexus of business and technology. For over 50 years, organisations have trusted SAP  to bring out their best by uniting business-critical operations spanning finance, procurement, HR, supply chain, and customer experience."},
-          { name: 'PROMAN (Production Management System)', image: 'https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/971/2022/09/Smart-Manufacturing-Plant-iStock-1367617035.jpg',details:"A SAAS(Software-as-a-Service) model production management ERP, is a comprehensive production management software that integrates various core processes and functions within a manufacturing organization into a single system. It allows for streamlined data flow and facilitates efficient communication between departments. " },
-          { name: 'Sri Agam Mithran', image: 'https://res.cloudinary.com/dsgdnskfj/image/upload/v1732032964/Hospital-Management-System_xanl1m.jpg',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
-          { name: 'Temple Management System', image: 'https://i1.wp.com/vak1969.com/wp-content/uploads/2017/01/sri-ekambaranathar-temple-kanchipuram-tamil-nadu.jpg?ssl=1',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
-          { name: 'SAP', image: 'https://runibex.com/wp-content/uploads/2020/10/runibex-technology_1474696694-scaled.jpg',details:"As a global leader in enterprise applications and business AI, SAP  stands at the nexus of business and technology. For over 50 years, organisations have trusted SAP  to bring out their best by uniting business-critical operations spanning finance, procurement, HR, supply chain, and customer experience."},
-          { name: 'PROMAN', image: 'https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/971/2022/09/Smart-Manufacturing-Plant-iStock-1367617035.jpg',details:"A SAAS(Software-as-a-Service) model production management ERP, is a comprehensive production management software that integrates various core processes and functions within a manufacturing organization into a single system. It allows for streamlined data flow and facilitates efficient communication between departments. " },
-          { name: 'Sri Agam Mithran', image: 'https://res.cloudinary.com/dsgdnskfj/image/upload/v1732032964/Hospital-Management-System_xanl1m.jpg',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
+        {[{ link:'/templeerp',  name: 'Temple Management System', image: 'https://i1.wp.com/vak1969.com/wp-content/uploads/2017/01/sri-ekambaranathar-temple-kanchipuram-tamil-nadu.jpg?ssl=1',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." }, 
+          { link:'/sap',name: 'SAP', image: 'https://runibex.com/wp-content/uploads/2020/10/runibex-technology_1474696694-scaled.jpg',details:"As a global leader in enterprise applications and business AI, SAP  stands at the nexus of business and technology. For over 50 years, organisations have trusted SAP  to bring out their best by uniting business-critical operations spanning finance, procurement, HR, supply chain, and customer experience."},
+          { link:'/proman',name: 'PROMAN (Production Management System)', image: 'https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/971/2022/09/Smart-Manufacturing-Plant-iStock-1367617035.jpg',details:"A SAAS(Software-as-a-Service) model production management ERP, is a comprehensive production management software that integrates various core processes and functions within a manufacturing organization into a single system. It allows for streamlined data flow and facilitates efficient communication between departments. " },
+          { link:'/sri-agam-mithran',name: 'Sri Agam Mithran', image: 'https://res.cloudinary.com/dsgdnskfj/image/upload/v1732032964/Hospital-Management-System_xanl1m.jpg',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
+          { link:'/templeerp',name: 'Temple Management System', image: 'https://i1.wp.com/vak1969.com/wp-content/uploads/2017/01/sri-ekambaranathar-temple-kanchipuram-tamil-nadu.jpg?ssl=1',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
+          { link:'/sap',name: 'SAP', image: 'https://runibex.com/wp-content/uploads/2020/10/runibex-technology_1474696694-scaled.jpg',details:"As a global leader in enterprise applications and business AI, SAP  stands at the nexus of business and technology. For over 50 years, organisations have trusted SAP  to bring out their best by uniting business-critical operations spanning finance, procurement, HR, supply chain, and customer experience."},
+          { link:'/proman',name: 'PROMAN', image: 'https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/971/2022/09/Smart-Manufacturing-Plant-iStock-1367617035.jpg',details:"A SAAS(Software-as-a-Service) model production management ERP, is a comprehensive production management software that integrates various core processes and functions within a manufacturing organization into a single system. It allows for streamlined data flow and facilitates efficient communication between departments. " },
+          { link:'/sri-agam-mithran',name: 'Sri Agam Mithran', image: 'https://res.cloudinary.com/dsgdnskfj/image/upload/v1732032964/Hospital-Management-System_xanl1m.jpg',details:"ERP in healthcare industry integrates various processes into a unified system, optimizing data management, resource allocation, and decision-making. This centralized approach fosters efficient communication and collaboration, with tailored systems addressing specific industry needs and functions to enhance overall organizational efficiency." },
       ].map((item, index) => (
           <div key={index} className="item" style={{ backgroundImage: `url(${item.image})` }}>
             <div className="content">
               <div className="name">{item.name}</div>
               <div className="des"><p>{item.details}</p></div>
               <div className="btn">
-                <button>See More</button>
-                <button>Request Demo</button>
+                <button onClick={() => navigate(`${item.link}`)}>See More</button>
+                <button onClick={() => navigate('/contact-us')}>Request Demo</button> 
               </div>
             </div>
           </div>

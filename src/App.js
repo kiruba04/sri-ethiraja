@@ -13,9 +13,11 @@ import Agam from './pages/Sriagammithiran/Agam';
 import Templeerp from './pages/templeerp/Templeerp';
 import Contactus from './pages/contactus/Contactus';
 
+import ScrollToTop from './utils/scroll'
 function App() {
   return (
     <Router>  
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sap" element={<Sappage/>}/>

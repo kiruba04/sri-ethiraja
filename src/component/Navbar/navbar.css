@@ -40,3 +40,7 @@
  .nav-link:hover{
   color:#F7B538 !important;
  }
+
+ .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color:var(--bs-nav-link-color) !important;
+ }

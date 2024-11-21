@@ -10,7 +10,7 @@ const webcontent = () =>{
                 <p className="erppara"> 
                 A mobile app (or mobile application) is a software application developed specifically for use on small, wireless computing devices, such as smartphones and tablets, rather than desktop or laptop computers.
                 </p>
-                <ul className="websub">
+                <ul className="websub erpul">
 	<li className="webpoints">Mobile apps, vital in today's digital age, are categorized as web-based, native (platform-specific), or hybrid (combining both). </li>
     <li className="webpoints">They impact daily life, from social networking to business and productivity.</li>
                 </ul>

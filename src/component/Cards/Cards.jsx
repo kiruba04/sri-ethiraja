@@ -36,7 +36,7 @@ function Cards() {
   }, [activeCard, switchCard]); // Add switchCard to dependencies
 
   return (
-    <div className="container mt-3 cardcontainer">
+    <div className="container mt-3 cardcontainer" id="about">
       <div ref={headingRef} className="heading">What we are?</div>
  
       <div className="row">
