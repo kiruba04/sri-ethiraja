@@ -43,7 +43,7 @@ const Sapcontent =() =>{
         <li>Business Technology Platform</li><li>CRM and Customer Experience </li>
         <li>Artificial Intelligence </li><li>Spend Management</li> 
         <li>Supply Chain Management</li><li>Human Capital Management</li>
-        <li>Financial Management </li><li>Small and Midsize Enterprises</li> 
+        <li>Financial Management </li><li>Small, Medium and Large Enterprises</li> 
         <li>Industry Solutions</li> 
         
             </ul>

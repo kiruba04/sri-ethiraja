@@ -39,7 +39,7 @@ const featuresData = [
 const Feature= () => {
   return (
     <>
-    <div className='text-center charhead mt-2'>Key Characteristics of Web service</div>
+    <div className='text-center charhead mt-2'>Key Characteristics of App service</div>
     <div className=" container features-container">
       {featuresData.map((feature, index) => (
         

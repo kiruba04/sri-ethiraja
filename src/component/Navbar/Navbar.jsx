@@ -17,7 +17,7 @@ function MyNavbar() {
             src={logo}
             alt="MyBrand Logo"
             width="120"      // Adjust the width to your preference
-            height="60"     // Adjust the height to your preference
+            height="80"     // Adjust the height to your preference
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
