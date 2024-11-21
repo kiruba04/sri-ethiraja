@@ -11,16 +11,25 @@ const Footer = () => {
         {/* Footer CTA Section */}
         <div className="footer-cta pt-4 pb-4">
           <div className="row">
-            <div className="col-xl-4 col-md-4 mb-30">
+            <div className="col-xl-3 col-md-4 mb-30">
               <div className="single-cta">
                 <i className="fas fa-map-marker-alt"></i>
                 <div className="cta-text">
-                  <h4>Find us</h4>
+                  <h4>Operation Centre</h4>
                   <span>Phase I, 27, Apex enclave, airport road, Kurumbapalayam, Coimbatore – 641107.</span>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-4 mb-30">
+            <div className="col-xl-3 col-md-4 mb-30">
+              <div className="single-cta">
+                <i className="fas fa-map-marker-alt"></i>
+                <div className="cta-text">
+                  <h4>Head office</h4>
+                  <span>4/338 A Gandhipuram South, Udumalpet, Tiruppur - 642154</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-md-4 mb-30">
               <div className="single-cta">
                 <i className="fas fa-phone"></i>
                 <div className="cta-text">
@@ -29,7 +38,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-4 mb-30">
+            <div className="col-xl-3 col-md-4 mb-30">
               <div className="single-cta">
                 <i className="far fa-envelope-open"></i>
                 <div className="cta-text">
@@ -153,7 +162,7 @@ const Footer = () => {
               <div className="copyright-text">
                 <p>
                   Copyright &copy; 2024, All Right Reserved{" "}
-                   Sri Ethiraj Technology
+                   Sri Ethiraja Technologies
                 </p>
               </div>
             </div>

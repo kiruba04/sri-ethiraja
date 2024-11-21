@@ -45,7 +45,7 @@ const Reasons = () => {
     return (
       <Container className='mt-4'>
         <div className='mb-4'>
-          <div className='charhead'>Reasons why your Hospital needs a Sri Agam Mithran</div>
+          <div className='charhead'>Reasons why a Hospital needs Sri Agam Mithran</div>
         </div>
         <Row>
           {cardContent.map((item, index) => (

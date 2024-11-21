@@ -5,7 +5,7 @@ const Sapcontent =() =>{
     return (
         <>
         <div className="container mt-4 sapcontent">
-            <div className="saptitle">What is SAP</div>
+            <div className="saptitle">What is SAP ?</div>
         <p className="sappara">Traditional business models often decentralize data management, with each business function storing its own operational data in a separate database. This makes it difficult for employees from different business functions to access each other’s information. Furthermore, duplication of data across multiple departments increases IT storage costs and the risk of data errors.
             By centralizing data management, SAP software provides multiple business functions with a single view of the truth. This helps companies better manage complex business processes by giving employees of different departments easy access to real-time insights across the enterprise. As a result, businesses can accelerate workflows, improve operational efficiency, raise productivity, enhance customer experiences – and ultimately increase profits.
         </p>
