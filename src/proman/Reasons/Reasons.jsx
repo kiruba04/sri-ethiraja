@@ -29,7 +29,7 @@ const cardContent = [
   },
   {
     title: "Industry Versatility",
-    description: `ts adaptability across various manufacturing sectors—such as mechanical, electrical, electronics, and chemical—makes it a versatile tool for organizations of all sizes.`,
+    description: `It's adaptability across various manufacturing sectors—such as mechanical, electrical, electronics, and chemical—makes it a versatile tool for organizations of all sizes.`,
   },
   {
     title: "Cost Savings",
