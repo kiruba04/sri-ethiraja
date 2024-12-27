@@ -1,7 +1,34 @@
 import './Contact.css'
-
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 const Contact = () => 
-{
+{  
+	const form = useRef();
+
+	const sendEmail = (e) => {
+	  e.preventDefault();
+  
+	  emailjs
+		.sendForm(
+		  'service_chz25lt', // Replace with your Service ID
+		  'template_qy1zteb', // Replace with your Template ID
+		  form.current,
+		  'WHrOxqCQ7Nb5T8zBs'   // Replace with your Public Key
+		)
+		.then(
+		  (result) => {
+			console.log('Email sent successfully:', result.text);
+			
+		  },
+		  (error) => {
+			console.error('Error sending email:', error.text);
+			alert('Failed to send the message. Please try again.');
+		  }
+		);
+  
+	  e.target.reset(); // Clear the form after submission
+	};
+	
     return(
         <>
         <div className="container-contact">
@@ -302,38 +329,54 @@ const Contact = () =>
 			</g>
 	</svg>
 	
-	
+	<form className="col-sm-12 col-lg-6" ref={form} onSubmit={sendEmail}>
+      <h1 className="title text-center mb-4">Talk to Us</h1>
 
-	
-	<form className='col-sm-12 col-lg-6'>
-		<h1 className="title text-center mb-4">Talk to Us</h1>
+      <div className="form-group position-relative">
+        <label htmlFor="formName" className="d-block">
+          <i className="icon" data-feather="user"></i>
+        </label>
+        <input
+          type="text"
+          id="formName"
+          name="user_name"
+          className="form-control form-control-lg thick"
+          placeholder="Name"
+          required
+        />
+      </div>
 
-			
-			<div className="form-group position-relative">
-				<label htmlFor="formName" className="d-block">
-					<i className="icon" data-feather="user"></i>
-				</label>
-				<input type="text" id="formName" className="form-control form-control-lg thick" placeholder="Name"/>
-			</div>
+      <div className="form-group position-relative">
+        <label htmlFor="formEmail" className="d-block">
+          <i className="icon" data-feather="mail"></i>
+        </label>
+        <input
+          type="email"
+          id="formEmail"
+          name="user_email"
+          className="form-control form-control-lg thick"
+          placeholder="E-mail"
+          required
+        />
+      </div>
 
-			
-			<div className="form-group position-relative">
-				<label htmlFor="formEmail" className="d-block">
-					<i className="icon" data-feather="mail"></i>
-				</label>
-				<input type="email" id="formEmail" className="form-control form-control-lg thick" placeholder="E-mail"/>
-			</div>
+      <div className="form-group message">
+        <textarea
+          id="formMessage"
+          name="message"
+          className="form-control form-control-lg"
+          rows="7"
+          placeholder="Message"
+          required
+        ></textarea>
+      </div>
 
-			
-			<div className="form-group message">
-				<textarea id="formMessage" className="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
-			</div>
-		
-			
-			<div className="text-center">
-				<button type="submit" className="contact-btn" tabIndex="-1">Send message</button>
-			</div>
-	</form>
+      <div className="text-center">
+        <button type="submit" className="contact-btn" tabIndex="-1">
+          Send message
+        </button>
+      </div>
+    </form>
 	
 </div>
 </div>

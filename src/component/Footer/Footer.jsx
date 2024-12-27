@@ -90,7 +90,7 @@ const Footer = () => {
         <Link to="/sri-agam-mithran">Sri Agam Mithran</Link>
       </li>
       <li>
-        <Link to="/sap">Sap Service</Link>
+        <Link to="/sap">SAP</Link>
       </li>
       <li>
         <Link to="/proman">Proman</Link>
@@ -161,8 +161,7 @@ const Footer = () => {
             <div className="col-xl-6 col-lg-6 text-center text-lg-left">
               <div className="copyright-text">
                 <p>
-                  Copyright &copy; 2024, All Right Reserved{" "}
-                   Sri Ethiraja Technologies
+                  Copyright &copy; 2024, All Right Reserved{" "}<span className="company-name">Sri Ethiraja Technologies</span>
                 </p>
               </div>
             </div>

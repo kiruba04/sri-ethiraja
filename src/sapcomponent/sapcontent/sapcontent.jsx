@@ -36,7 +36,7 @@ const Sapcontent =() =>{
                 </div>
 
                 <div className="col-lg-6 col-md-6 col-12">
-                    <div className="saptitle erptitle">Sap Service</div>
+                    <div className="saptitle erptitle">SAP Service</div>
                 <p className="erppara ">
       <ul className="erppara erpul">
         <li>Cloud ERP </li><li>Business Network </li>

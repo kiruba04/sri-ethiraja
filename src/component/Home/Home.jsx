@@ -13,7 +13,7 @@ const Carousel = () => {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const timeRunning = 3000;
-  const timeAutoNext = 7000;
+  const timeAutoNext = 9500;
 
   const showSlider = (type) => {
     const sliderItemsDom = listRef.current.querySelectorAll('.item');

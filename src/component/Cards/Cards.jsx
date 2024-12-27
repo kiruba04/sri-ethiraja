@@ -60,7 +60,7 @@ function Cards() {
              <div>
                   <p className="card1-title">VISION</p>
                   <p className="small-desc">
-                  To help accelerate business growth for our clients by enabling digital transformation at scale!
+                  To accelerate business growth for our clients by enabling digital transformation at scale!
                   </p>
                   </div>
                   <div>
